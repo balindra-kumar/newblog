@@ -1,0 +1,14 @@
+{
+  "routes": [
+    "/",
+    "/admin",
+    "/admin/dashboard",
+    "/admin/dashboard/createpost",
+    "/admin/dashboard/viewpost",
+    "/admin/dashboard/webstoriescreate",
+    "/admin/dashboard/webstoriesread",
+    "/admin/login",
+    "/admin/otpvarification",
+    "/admin/registration"
+  ]
+}
