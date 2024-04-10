@@ -1,6 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { PostdatePipe } from '../../postdate.pipe';
 @Component({
+  standalone: true,
+  imports: [CommonModule,HttpClientModule,PostdatePipe],
   selector: 'app-stories',
   templateUrl: './stories.component.html',
   styleUrls: ['./stories.component.css']

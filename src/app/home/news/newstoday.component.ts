@@ -11,7 +11,7 @@ declare var $:any;
     selector: 'app-newstoday',
     templateUrl: './newstoday.component.html',
     styleUrls: ['./newstoday.component.css'],
-    imports: [CommonModule, RouterLink, HttpClientModule,PostdatePipe,NavbarComponent]
+    imports: [CommonModule, RouterLink, HttpClientModule,PostdatePipe, NavbarComponent]
 })
 export class NewstodayComponent {
 

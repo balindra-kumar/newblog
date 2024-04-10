@@ -1,7 +1,7 @@
 import './polyfills.server.mjs';
 import {
   main_server_default
-} from "./chunk-DEO64CMP.mjs";
+} from "./chunk-5XNWBFYI.mjs";
 import {
   APP_BASE_HREF,
   SERVER_CONTEXT,
@@ -35808,7 +35808,7 @@ function app() {
   return server;
 }
 function run() {
-  const port = process.env["PORT"] || 5e3;
+  const port = process.env["PORT"] || 4e3;
   const server = app();
   server.listen(port, () => {
     console.log(`Node Express server listening on http://localhost:${port}`);

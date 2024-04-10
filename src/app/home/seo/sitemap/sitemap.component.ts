@@ -1,7 +1,11 @@
+import { Component,OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Component} from '@angular/core';
-import { UserService } from 'src/app/admin/vertical/dashboard/user.service';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { PostdatePipe } from '../../postdate.pipe';
 @Component({
+  standalone: true,
+  imports: [CommonModule,HttpClientModule,PostdatePipe],
   selector: 'app-sitemap',
   templateUrl: './sitemap.component.html',
   styleUrls: ['./sitemap.component.css']
@@ -11,7 +15,7 @@ export class SitemapComponent {
   getPostUrl ="http://balindra.com/post/read.php"
   allPostArray:any =[];
   postItems:{postTitle:any ,postStroies:any[]}[]=[];
-  constructor(private userService: UserService, private http:HttpClient){
+  constructor(private http:HttpClient){
   this.http.get(this.getPostUrl, {responseType:'json'}).subscribe((data:any)=>{
    this.allPostArray = data;
    console.log(this.allPostArray);
